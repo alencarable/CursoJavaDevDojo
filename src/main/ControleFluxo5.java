@@ -1,3 +1,5 @@
+package main;
+
 public class ControleFluxo5 {
 
     public static void main(String[] args) {
