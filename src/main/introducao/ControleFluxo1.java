@@ -1,4 +1,4 @@
-package main;
+package main.introducao;
 
 public class ControleFluxo1 {
     public static void main(String[] args) {
