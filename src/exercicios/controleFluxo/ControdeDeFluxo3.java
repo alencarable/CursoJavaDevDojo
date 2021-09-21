@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios.controleFluxo;
 
 public class ControdeDeFluxo3 {
 

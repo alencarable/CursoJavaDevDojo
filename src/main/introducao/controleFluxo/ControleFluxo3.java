@@ -1,4 +1,4 @@
-package main.introducao;
+package main.introducao.controleFluxo;
 
 import java.util.Scanner;
 

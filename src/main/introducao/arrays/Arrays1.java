@@ -1,4 +1,4 @@
-package main.introducao;
+package main.introducao.arrays;
 
 public class Arrays1 {
 
