@@ -28,4 +28,13 @@ public class Calculadora {
         }
         return 0;
     }
+
+    public void alteraDoisNumeros (int a, int b) {
+        a = 30;
+        b = 40;
+
+        System.out.println("Dentro altera dois números");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
 }
