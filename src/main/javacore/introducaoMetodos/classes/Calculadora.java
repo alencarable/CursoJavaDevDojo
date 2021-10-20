@@ -3,9 +3,9 @@ package main.javacore.introducaoMetodos.classes;
 public class Calculadora {
 
     /**
-     *     1º - Modificador de Acesso
-     *     2º - Tipo de retorno
-     *     3º - Nome do método.
+     *     1º - Modificador de Acesso: public, private
+     *     2º - Tipo de retorno: void, String, double, int...
+     *     3º - Nome do método: "somaDoisNumeros", "somaArray"
      */
 
     public void somaDoisNumeros () {
@@ -36,5 +36,32 @@ public class Calculadora {
         System.out.println("Dentro altera dois números");
         System.out.println("a = " + a);
         System.out.println("b = " + b);
+    }
+
+    public void somaArray (int[] numeros) {
+
+        int soma = 0;
+        for (int num:
+             numeros) {
+            soma +=num;
+        }
+        System.out.println(soma);
+    }
+
+    /**
+    Vamos usar o @VarArgs para o caso dos arrays.
+
+    Só podemos usar um VarArgs por assinatura de método.
+    O uso do VarArgs "..." somente poderá ser colocado por último, para o Java compilar perfeitamente:
+
+    public void somaVarArgs (double valorDouble, int... numeros) {}
+     */
+    public void somaVarArgs (int... numeros) {
+        int soma = 0;
+        for (int num:
+                numeros) {
+            soma +=num;
+        }
+        System.out.println(soma);
     }
 }
