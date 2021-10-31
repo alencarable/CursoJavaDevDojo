@@ -5,6 +5,7 @@ public class Estudante {
     private String nome;
     private int idade;
     private double[] notas;
+    private boolean aprovado;
 
 
     public void imprimir() {
@@ -37,8 +38,10 @@ public class Estudante {
         soma = soma / this.notas.length;
 
         if (soma > 6) {
+            this.aprovado = true;
             System.out.printf("A média é: %.2f \nSituação: aprovado!", soma);
         } else {
+            this.aprovado = false;
             System.out.printf("A média é: %.2f \nSituação: reprovado!", soma);
         }
     }
@@ -85,5 +88,10 @@ public class Estudante {
 
     public double[] getNotas () {
         return this.notas;
+    }
+
+    // Para valores booleanos não é usado o get, e sim o Is
+    public boolean isAprovado () {
+        return this.aprovado;
     }
 }

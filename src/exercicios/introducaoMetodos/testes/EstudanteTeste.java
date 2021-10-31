@@ -26,5 +26,6 @@ public class EstudanteTeste {
         System.out.println(estudante.getNome());
         System.out.println(estudante.getIdade());
         System.out.println(estudante.getNotas());
+        System.out.println("Aprovado? " + estudante.isAprovado());
     }
 }
