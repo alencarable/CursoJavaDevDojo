@@ -6,9 +6,11 @@ public class FuncionarioTeste {
 
     public static void main(String[] args) {
 
-        Funcionario funcionario = new Funcionario();
+        Funcionario funcionario = new Funcionario("Chica da Silva", "111.222.333-44", 3500, "134257890-6");
 
-        funcionario.init("Chica da Silva", "111.222.333-44", 3500, "134257890-6");
+        Funcionario funcionarioVazio = new Funcionario();
+
+        //funcionario.init("Chica da Silva", "111.222.333-44", 3500, "134257890-6");
 
         /*
         funcionario.setNome("Chica da Silva");
@@ -17,5 +19,6 @@ public class FuncionarioTeste {
          */
 
         funcionario.imprime();
+        funcionarioVazio.imprime();
     }
 }
