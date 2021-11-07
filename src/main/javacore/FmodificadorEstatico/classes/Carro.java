@@ -12,7 +12,7 @@ public class Carro {
     /** @static
      O operador estático faz com que o pertencimento deixe de ser do objeto para a classe.
      */
-    public static double velocidadeLimite = 240;
+    private static double velocidadeLimite = 240;
 
     /*
     * Construtores
@@ -53,13 +53,12 @@ public class Carro {
         this.velocidadeMaxima = velocidadeMaxima;
     }
 
-    /*
     public double getVelocidadeLimite() {
         return velocidadeLimite;
     }
 
-    public void setVelocidadeLimite(double velocidadeLimite) {
-        this.velocidadeLimite = velocidadeLimite;
+    public static void setVelocidadeLimite(double velocidadeLimite) {
+        Carro.velocidadeLimite = velocidadeLimite;
     }
-    */
+
 }

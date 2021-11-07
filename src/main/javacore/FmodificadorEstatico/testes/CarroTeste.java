@@ -36,5 +36,11 @@ public class CarroTeste {
          excluindo-se os getters & setters desse atributo.
         */
 
+        Carro.setVelocidadeLimite(200);
+
+        esportivo.imprime();
+        utilitario.imprime();
+        luxo.imprime();
+
     }
 }
